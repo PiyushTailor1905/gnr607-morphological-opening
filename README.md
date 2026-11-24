@@ -3,7 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PiyushTailor1905/gnr607-morphological-opening/blob/main/08_Colab/GNR607_Demo.ipynb)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 
-A reproducible digital-image-processing experiment (course programming assignment, **GNR 607**) that measures how quickly the foreground of a binarised satellite image disappears under morphological opening with growing structuring elements — for an **urban / textured** scene and a **smooth water-and-forest** scene.
+A reproducible digital-image-processing experiment that measures how quickly the foreground of a binarised satellite image disappears under morphological opening with growing structuring elements — for an **urban / textured** scene and a **smooth water-and-forest** scene.
 
 > **Task.** Binarise a remotely sensed image. Open it with a 3×3 box structuring element (SE) and count the surviving foreground pixels. Build a bigger SE by dilating the current SE with the 3×3 box (3×3 → 5×5 → 7×7 → …) and repeat, until the opening gives a null image. Plot SE size vs. surviving foreground pixels, for an urban image and for a smoother one.
 
