@@ -1,0 +1,15 @@
+{
+  "site": "Ramganga reservoir / Corbett forest, Uttarakhand, India",
+  "centre_lon": 78.76,
+  "centre_lat": 29.53,
+  "stac_item": "S2C_44RKT_20260420_0_L2A",
+  "acquisition": "2026-04-20T05:30:50.088000Z",
+  "cloud_cover": 0.000268,
+  "platform": "sentinel-2c",
+  "crs": "EPSG:32644",
+  "size_px": 1024,
+  "gsd_m": 10,
+  "bands": "B04 (red), B03 (green), B02 (blue), stretch DN/3000*255",
+  "source": "https://earth-search.aws.element84.com/v1 (Sentinel-2 L2A COGs, ESA/Copernicus)",
+  "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_44RKT_20260420_0_L2A"
+}

@@ -1,0 +1,9 @@
+image,variant,threshold,foreground_px,foreground_pct,pct_after_3x3,se_for_50pct,se_for_10pct,null_se,iterations
+Urban,T-10,60,384081,36.63,68.38,5,11,21,10
+Urban,Otsu (baseline),70,286813,27.35,56.46,5,9,21,10
+Urban,T+10,80,207622,19.8,45.6,3,7,19,9
+Urban,"Otsu, neutral border",70,286813,27.35,56.6,5,9,23,11
+Smooth,T-10,51,430044,41.01,80.56,7,27,55,27
+Smooth,Otsu (baseline),61,261466,24.94,73.83,7,25,49,24
+Smooth,T+10,71,161260,15.38,71.71,7,21,35,17
+Smooth,"Otsu, neutral border",61,261466,24.94,73.93,7,27,49,24

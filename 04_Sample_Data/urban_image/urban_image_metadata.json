@@ -1,0 +1,15 @@
+{
+  "site": "New Delhi, India (urban core)",
+  "centre_lon": 77.209,
+  "centre_lat": 28.6139,
+  "stac_item": "S2C_43RGM_20251224_0_L2A",
+  "acquisition": "2025-12-24T05:41:11.158000Z",
+  "cloud_cover": 0.000601,
+  "platform": "sentinel-2c",
+  "crs": "EPSG:32643",
+  "size_px": 1024,
+  "gsd_m": 10,
+  "bands": "B04 (red), B03 (green), B02 (blue), stretch DN/3000*255",
+  "source": "https://earth-search.aws.element84.com/v1 (Sentinel-2 L2A COGs, ESA/Copernicus)",
+  "item_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_43RGM_20251224_0_L2A"
+}

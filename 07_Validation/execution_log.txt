@@ -1,0 +1,36 @@
+
+=== Urban  (urban_image.png) ===
+  image 1024x1024, threshold T=70, foreground 286,813 px (27.35%)
+    iter   0  SE    3x3     foreground =   161943  ( 56.46% left)
+    iter   9  SE   21x21    foreground =        0  (  0.00% left)
+  finished in 0.1s: null image at SE 21x21 after 10 iterations
+
+=== Smooth_Landscape  (smooth_landscape_image.png) ===
+  image 1024x1024, threshold T=61, foreground 261,466 px (24.94%)
+    iter   0  SE    3x3     foreground =   193039  ( 73.83% left)
+    iter  20  SE   43x43    foreground =     2299  (  0.88% left)
+    iter  23  SE   49x49    foreground =        0  (  0.00% left)
+  finished in 0.2s: null image at SE 49x49 after 24 iterations
+
+=== Urban_InvertedForeground  (urban_image.png) ===
+  image 1024x1024, threshold T=70, foreground 761,763 px (72.65%)
+    iter   0  SE    3x3     foreground =   671307  ( 88.13% left)
+    iter  20  SE   43x43    foreground =    86627  ( 11.37% left)
+    iter  40  SE   83x83    foreground =    28056  (  3.68% left)
+    iter  53  SE  109x109   foreground =        0  (  0.00% left)
+  finished in 0.3s: null image at SE 109x109 after 54 iterations
+
+=== Smooth_InvertedForeground  (smooth_landscape_image.png) ===
+  image 1024x1024, threshold T=61, foreground 787,110 px (75.06%)
+    iter   0  SE    3x3     foreground =   738432  ( 93.82% left)
+    iter  20  SE   43x43    foreground =   235743  ( 29.95% left)
+    iter  40  SE   83x83    foreground =   191912  ( 24.38% left)
+    iter  60  SE  123x123   foreground =   163991  ( 20.83% left)
+    iter  80  SE  163x163   foreground =   154195  ( 19.59% left)
+    iter 100  SE  203x203   foreground =   152978  ( 19.44% left)
+    iter 120  SE  243x243   foreground =   126428  ( 16.06% left)
+    iter 140  SE  283x283   foreground =    96274  ( 12.23% left)
+    iter 143  SE  289x289   foreground =        0  (  0.00% left)
+  finished in 1.2s: null image at SE 289x289 after 144 iterations
+
+All experiments reached the null image. Results in: C:\Users\hp\OneDrive\AppData\Desktop\ET617_Endsem\GNR607_Programming_Assignment\05_Results

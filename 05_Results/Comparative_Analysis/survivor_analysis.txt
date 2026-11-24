@@ -1,0 +1,20 @@
+URBAN BELOW SMOOTH AT EVERY COMMON SE SIZE? (same variant for both images)
+  T-10: yes (null SE urban 21, smooth 55)
+  Otsu (baseline): yes (null SE urban 21, smooth 49)
+  T+10: yes (null SE urban 19, smooth 35)
+  Otsu, neutral border: yes (null SE urban 23, smooth 49)
+
+SURVIVOR ANALYSIS (computed by sensitivity.py)
+
+Urban: last non-null SE 19x19: 817 px in 2 connected component(s):
+   bounding box x=841, y=466, w=20, h=19, area=380 px
+   bounding box x=990, y=788, w=19, h=23, area=437 px
+
+Smooth: last non-null SE 47x47: 2209 px in 1 connected component(s):
+   bounding box x=351, y=906, w=47, h=47, area=2209 px
+   identical count 2299 px for SE sizes 37..45 (plateau)
+
+Smooth, dark-pixel foreground, SE 43x43: 235743 px (29.95% of foreground); 98.1% of the surviving pixels have gray <= 30 (water mode of the histogram); mean gray 14.6
+Smooth, dark-pixel foreground, SE 103x103: 176722 px (22.45% of foreground); 99.8% of the surviving pixels have gray <= 30 (water mode of the histogram); mean gray 14.8
+Smooth, dark-pixel foreground, SE 203x203: 152978 px (19.44% of foreground); 99.9% of the surviving pixels have gray <= 30 (water mode of the histogram); mean gray 14.8
+Smooth, dark-pixel foreground, SE 243x243: 126428 px (16.06% of foreground); 99.9% of the surviving pixels have gray <= 30 (water mode of the histogram); mean gray 15.4

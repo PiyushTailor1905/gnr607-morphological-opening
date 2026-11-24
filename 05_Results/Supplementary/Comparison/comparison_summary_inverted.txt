@@ -1,0 +1,24 @@
+COMPARATIVE SUMMARY (numbers computed directly from the results.csv tables)
+Supplementary experiment: foreground = DARK pixels (gray <= T)
+
+metric                                               Urban-inv          Smooth-inv
+foreground pixels in binary image                      761,763             787,110
+foreground after 3x3 opening                           671,307             738,432
+% remaining after 3x3 opening                            88.13               93.82
+SE size where <=50% remains                                  9                  17
+SE size where <=10% remains                                 49                 289
+SE size where <=1% remains                                 109                 289
+last non-null SE size                                      107                 287
+first null SE size                                         109                 289
+number of SE iterations                                     54                 144
+
+Remaining foreground at common SE sizes:
+    SE         Urban-inv N       %        Smooth-inv N       %
+     3             671,307   88.13             738,432   93.82
+     5             555,883   72.97             672,955   85.50
+     9             358,719   47.09             546,912   69.48
+    17             188,447   24.74             389,404   49.47
+    33             113,394   14.89             264,747   33.64
+    65              52,320    6.87             203,613   25.87
+
+Reaches null image first: Urban-inv

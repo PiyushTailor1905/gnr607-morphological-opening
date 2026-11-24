@@ -1,0 +1,82 @@
+GNR 607 VALIDATION REPORT
+============================================================
+[PASS] C1a SE0 is exactly the 3x3 all-ones box
+[PASS] C1b SE_k are full square boxes of side 3,5,7,...,321
+[PASS] C1c SE_(k+1) == SE_k dilated by 3x3 (Minkowski sum and cv2.dilate agree)
+
+--- Urban ---
+[PASS] binary input contains only {0,255} values
+[PASS] C3 CSV counts equal counts recounted from the saved opened PNGs (all iterations)
+[PASS] C3 counts are non-negative integers
+[PASS] C4 N(k+1) <= N(k) for all k
+[PASS] C5 last row is the first zero; all earlier rows > 0 -- null at SE 21x21 after 10 iterations
+[PASS] C1d SE sizes in CSV are 3,5,7,... consecutive odd
+[PASS] C6 saved opened images equal scipy.ndimage.binary_opening (full image, SE [3, 5, 9, 17])
+[PASS] C6 summed-area-table opening (independent algorithm) equals saved output for ALL 10 SEs on the full image
+[PASS] C0 saved binary image == (gray > T) or (gray <= T) recomputed from the saved original
+[PASS] C0 threshold T=70 equals an independent NumPy Otsu implementation -- numpy Otsu = 70
+[PASS] C0 gray image is BT.601 luminance (max abs diff <= 1 level)
+[PASS] C6 brute-force NumPy definition == cv2-based opening on a 256x256 crop for the first 25 SEs (3x3..51x51) or until null
+[PASS] C2 opened images are {0,255}
+[PASS] C2 opening(A, SE_k) recomputed from the saved binary image matches saved outputs (original used each time)
+[PASS] C2 opened_k subset of A and subset of opened_(k-1) (anti-extensive, nested)
+[PASS] C2 idempotence: open(open(A,SE)) == open(A,SE)
+
+--- Smooth_Landscape ---
+[PASS] binary input contains only {0,255} values
+[PASS] C3 CSV counts equal counts recounted from the saved opened PNGs (all iterations)
+[PASS] C3 counts are non-negative integers
+[PASS] C4 N(k+1) <= N(k) for all k
+[PASS] C5 last row is the first zero; all earlier rows > 0 -- null at SE 49x49 after 24 iterations
+[PASS] C1d SE sizes in CSV are 3,5,7,... consecutive odd
+[PASS] C6 saved opened images equal scipy.ndimage.binary_opening (full image, SE [3, 5, 9, 17])
+[PASS] C6 summed-area-table opening (independent algorithm) equals saved output for ALL 24 SEs on the full image
+[PASS] C0 saved binary image == (gray > T) or (gray <= T) recomputed from the saved original
+[PASS] C0 threshold T=61 equals an independent NumPy Otsu implementation -- numpy Otsu = 61
+[PASS] C0 gray image is BT.601 luminance (max abs diff <= 1 level)
+[PASS] C6 brute-force NumPy definition == cv2-based opening on a 256x256 crop for the first 25 SEs (3x3..51x51) or until null
+[PASS] C2 opened images are {0,255}
+[PASS] C2 opening(A, SE_k) recomputed from the saved binary image matches saved outputs (original used each time)
+[PASS] C2 opened_k subset of A and subset of opened_(k-1) (anti-extensive, nested)
+[PASS] C2 idempotence: open(open(A,SE)) == open(A,SE)
+
+--- Supplementary/Urban_InvertedForeground ---
+[PASS] binary input contains only {0,255} values
+[PASS] C3 CSV counts equal counts recounted from the saved opened PNGs (all iterations)
+[PASS] C3 counts are non-negative integers
+[PASS] C4 N(k+1) <= N(k) for all k
+[PASS] C5 last row is the first zero; all earlier rows > 0 -- null at SE 109x109 after 54 iterations
+[PASS] C1d SE sizes in CSV are 3,5,7,... consecutive odd
+[PASS] C6 saved opened images equal scipy.ndimage.binary_opening (full image, SE [3, 5, 9, 17])
+[PASS] C6 summed-area-table opening (independent algorithm) equals saved output for ALL 54 SEs on the full image
+[PASS] C0 saved binary image == (gray > T) or (gray <= T) recomputed from the saved original
+[PASS] C0 threshold T=70 equals an independent NumPy Otsu implementation -- numpy Otsu = 70
+[PASS] C0 gray image is BT.601 luminance (max abs diff <= 1 level)
+[PASS] C6 brute-force NumPy definition == cv2-based opening on a 256x256 crop for the first 25 SEs (3x3..51x51) or until null
+[PASS] C2 opened images are {0,255}
+[PASS] C2 opening(A, SE_k) recomputed from the saved binary image matches saved outputs (original used each time)
+[PASS] C2 opened_k subset of A and subset of opened_(k-1) (anti-extensive, nested)
+[PASS] C2 idempotence: open(open(A,SE)) == open(A,SE)
+
+--- Supplementary/Smooth_InvertedForeground ---
+[PASS] binary input contains only {0,255} values
+[PASS] C3 CSV counts equal counts recounted from the saved opened PNGs (all iterations)
+[PASS] C3 counts are non-negative integers
+[PASS] C4 N(k+1) <= N(k) for all k
+[PASS] C5 last row is the first zero; all earlier rows > 0 -- null at SE 289x289 after 144 iterations
+[PASS] C1d SE sizes in CSV are 3,5,7,... consecutive odd
+[PASS] C6 saved opened images equal scipy.ndimage.binary_opening (full image, SE [3, 5, 9, 17])
+[PASS] C6 summed-area-table opening (independent algorithm) equals saved output for ALL 144 SEs on the full image
+[PASS] C0 saved binary image == (gray > T) or (gray <= T) recomputed from the saved original
+[PASS] C0 threshold T=61 equals an independent NumPy Otsu implementation -- numpy Otsu = 61
+[PASS] C0 gray image is BT.601 luminance (max abs diff <= 1 level)
+[PASS] C6 brute-force NumPy definition == cv2-based opening on a 256x256 crop for the first 25 SEs (3x3..51x51) or until null
+[PASS] C2 opened images are {0,255}
+[PASS] C2 opening(A, SE_k) recomputed from the saved binary image matches saved outputs (original used each time)
+[PASS] C2 opened_k subset of A and subset of opened_(k-1) (anti-extensive, nested)
+[PASS] C2 idempotence: open(open(A,SE)) == open(A,SE)
+[PASS] C6 random images (incl. border-touching objects): cv2 == brute-force == summed-area-table for all SEs until null
+[PASS] C2 neutral-border opening >= zero-border opening (sanity of the border option)
+[PASS] C7 re-running main.py reproduces results.csv byte-for-byte
+
+TOTAL FAILURES: 0

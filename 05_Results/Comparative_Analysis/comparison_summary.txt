@@ -1,0 +1,22 @@
+COMPARATIVE SUMMARY (numbers computed directly from the results.csv tables)
+
+
+metric                                                   Urban              Smooth
+foreground pixels in binary image                      286,813             261,466
+foreground after 3x3 opening                           161,943             193,039
+% remaining after 3x3 opening                            56.46               73.83
+SE size where <=50% remains                                  5                   7
+SE size where <=10% remains                                  9                  25
+SE size where <=1% remains                                  15                  37
+last non-null SE size                                       19                  47
+first null SE size                                          21                  49
+number of SE iterations                                     10                  24
+
+Remaining foreground at common SE sizes:
+    SE             Urban N       %            Smooth N       %
+     3             161,943   56.46             193,039   73.83
+     5              71,865   25.06             138,767   53.07
+     9              18,779    6.55              89,019   34.05
+    17                 957    0.33              45,467   17.39
+
+Reaches null image first: Urban
